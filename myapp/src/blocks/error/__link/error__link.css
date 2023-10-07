@@ -1,0 +1,13 @@
+.error__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #4285F4;
+  transition: opacity .3s linear;
+}
+
+@media screen and (max-width:767px) {
+  .error__link {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,4 @@
+.about-project__timeline {
+  display: flex;
+  min-height: 67px;
+}

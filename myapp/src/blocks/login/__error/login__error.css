@@ -1,0 +1,8 @@
+.login__error {
+  display: block;
+  min-height: 24px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  color: #EE3465;
+}

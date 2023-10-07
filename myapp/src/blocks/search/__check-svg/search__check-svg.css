@@ -1,0 +1,21 @@
+.search__check-svg {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.search__check-svg-rect {
+  border-radius: 10px;
+  width: 36px;
+  height: 20px;
+  transition: all .3s linear;
+}
+
+.search__check-svg-circle {
+  transition: all .3s linear;
+}
+
+.search__check-svg-circle_active {
+  fill: #A0A0A0;
+  transform: translateX(-15px);
+}

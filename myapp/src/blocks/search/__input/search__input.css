@@ -1,0 +1,16 @@
+.search__input {
+  background-color: #2F2F2F;;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: #8B8B8B;
+}
+
+@media screen and (max-width:767px) {
+  .search__input {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

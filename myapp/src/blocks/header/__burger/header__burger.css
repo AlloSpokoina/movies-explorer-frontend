@@ -1,0 +1,40 @@
+.header__burger {
+  display: none;
+  margin-top: 15px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('../../../images/burger.svg');
+  background-position: center;
+  transition: opacity .3s linear;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .header__burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .header__burger {
+    background-image: url('../../../images/burger.svg');
+    display: block;
+  }
+}
+
+.header__burger-close {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../../images/closeburger1.svg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  transition: opacity .3s linear;
+}

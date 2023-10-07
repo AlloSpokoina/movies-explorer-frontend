@@ -1,0 +1,11 @@
+.aboutme__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 66px;
+}
+
+@media screen and (max-width:767px) {
+  .aboutme__container {
+    flex-direction: column-reverse;
+  }
+}

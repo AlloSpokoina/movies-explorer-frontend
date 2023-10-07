@@ -1,0 +1,13 @@
+.profile__error {
+  display: block;
+  min-height: 16px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  color: #EE3465;
+}
+
+.profile__error_type_name {
+  margin-bottom: 17px;
+  border-bottom: 1px solid #424242;
+}

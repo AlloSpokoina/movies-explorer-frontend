@@ -1,0 +1,25 @@
+.promo__decorate {
+  max-width: 722px;
+  max-height: 244px;
+  margin: 102px 70px 60px 488px;
+  padding: 122px;
+  background-image: url(../../../images/spiral.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .promo__decorate {
+    margin: 144px 0 0;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .promo__decorate {
+    margin: 60px 0 55px;
+    background-image: url(../../../images/spiral320.svg);
+    background-size: cover;
+    min-height: 230px;
+    padding: 0;
+  }
+}

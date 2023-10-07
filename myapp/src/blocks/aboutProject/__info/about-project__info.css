@@ -1,0 +1,21 @@
+.about_project__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0 110px;
+  color: #fff;
+  column-gap: 40px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .about_project__info {
+    column-gap: 30px;
+    margin: 70px 0 93px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .about_project__info {
+    flex-direction: column;
+    margin: 65px auto;
+  }
+}

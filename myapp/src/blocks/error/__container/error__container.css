@@ -1,0 +1,15 @@
+.error__container {
+  padding-top: 246px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .error__container {
+    padding-top: 408px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .error__container {
+    padding-top: 329px;
+  }
+}

@@ -1,0 +1,25 @@
+.gallery__more {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #424242;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.gallery__more_hidden {
+  visibility: hidden;
+}
+
+@media screen and (max-width:767px) {
+  .gallery__more {
+    width: 240px;
+  }
+}

@@ -1,0 +1,20 @@
+.login {
+  height: 100vh;
+  padding-top: 70px;
+  margin: 0 auto;
+  max-width: 396px;
+  background-color: #202020;;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .login{
+    padding-top: 232px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .login{
+    margin: 0 30px 0;
+    padding-top: 58px;
+  }
+}

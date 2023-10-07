@@ -1,0 +1,17 @@
+.about-project__title {
+  color: #fff;
+  font-size: 22px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: solid 1px #dadada;
+  letter-spacing: -0.88px;
+}
+
+@media screen and (max-width:767px) {
+  .about-project__title {
+    font-size: 18px;
+    letter-spacing: -0,72px;
+  }
+}

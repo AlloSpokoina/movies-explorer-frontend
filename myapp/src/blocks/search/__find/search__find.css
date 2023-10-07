@@ -1,0 +1,27 @@
+.search__find {
+  width: 100px;
+  padding: 19px 55px;
+  background-color: #2F2F2F;
+  border: none;
+  background-image: url(../../../images/find.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity .3s linear;
+  border-right: 1px solid #424242;
+  margin-right: 29px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .search__find {
+    padding: 19px 50px;
+    margin-right: 19px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .search__find{
+    margin-right: 0;
+    padding: 20px 49px;
+    border-right: none;
+  }
+}

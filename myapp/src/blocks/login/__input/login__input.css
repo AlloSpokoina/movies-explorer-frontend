@@ -1,0 +1,6 @@
+.login__input {
+  background-color: transparent;
+  height: 30px;
+  border-style: none;
+  border-bottom: solid 1px #424242;
+}

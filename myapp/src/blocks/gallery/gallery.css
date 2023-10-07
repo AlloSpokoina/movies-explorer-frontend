@@ -1,0 +1,16 @@
+.gallery {
+  background-color: #202020;
+  padding: 0 70px 159px 70px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .gallery {
+    padding: 0px 30px 159px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .gallery {
+    padding: 0 10px 159px;
+  }
+}
