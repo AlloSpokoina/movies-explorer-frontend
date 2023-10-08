@@ -23,7 +23,7 @@ export default function AboutMe() {
             Github
           </a>
         </div>
-        <img src={photo} alt="#" className="aboutme__image" />
+        <img src={photo} alt={photo} className="aboutme__image" />
       </div>
     </section>
   )

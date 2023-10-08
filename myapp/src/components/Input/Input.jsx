@@ -1,4 +1,4 @@
-export default function Input({ selectname, name, type, title, minLength, value, isInputValid, error, onChange }) {
+export default function Input({ selectname, name, type, title, minLength, value, isInputValid, error, onChange, placeholder}) {
 
   return (
     <>
@@ -14,6 +14,7 @@ export default function Input({ selectname, name, type, title, minLength, value,
             value={value || ''}
             onChange={onChange}
             autoComplete='on'
+            placeholder={placeholder}
           />
           <span className='login__error'>{error}</span>
         </label>

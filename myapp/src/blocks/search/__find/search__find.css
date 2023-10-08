@@ -25,3 +25,9 @@
     border-right: none;
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .search__find:hover {
+    opacity: .7;
+  }
+}

@@ -6,18 +6,19 @@ export default function Portfolio() {
       <ul className='portfolio__list'>
         <li className='portfolio__links'>
           <a href='https://github.com/AlloSpokoina/how-to-learn' target='_blank' className='portfolio__link' rel="noopener noreferrer">Статичный сайт
-          </a>
           <button type='button' className='portfolio__button'></button>
-        </li>
+          </a>
+          </li>
         <li className='portfolio__links'>
           <a href='https://github.com/AlloSpokoina/russian-travel/' target='_blank' className='portfolio__link' rel="noopener noreferrer">Адаптивный сайт
-          </a>
           <button type='button' className='portfolio__button'></button>
+          </a>
         </li>
         <li className='portfolio__links'>
           <a href='https://github.com/AlloSpokoina/react-mesto-auth/' target='_blank' className='portfolio__link' rel="noopener noreferrer">Одностраничное приложение
-          </a>
           <button type='button' className='portfolio__button'></button>
+          </a>
+
         </li>
       </ul>
     </section>

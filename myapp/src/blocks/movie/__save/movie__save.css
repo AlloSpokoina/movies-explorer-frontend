@@ -6,19 +6,20 @@
   border: none;
   cursor: pointer;
   margin-top: 10px;
+  transition: opacity .3s linear;
 }
 
 .movie__save_active {
-  background-image: url(../../../images/likeon.svg);
+  background-image: url(../../../images/likel.svg);
 }
 
-.gallery__save_type_delete {
+.movie__save_type_delete {
   background-position: center;
-  background-image: url(../../../images/likedelet.svg);
+  background-image: url(../../../images/delclose.svg);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .gallery__save:hover {
+  .movie__save:hover {
     opacity: .7;
   }
 }

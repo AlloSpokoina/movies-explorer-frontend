@@ -9,6 +9,14 @@
   color: #fff;
 }
 
+.profile__input:focus {
+  outline: 1px solid #4285F4;
+}
+
+.profile__input_invaid {
+  color: #EE3465;
+}
+
 @media screen and (max-width:767px) {
   .profile__input {
     width: 80%;

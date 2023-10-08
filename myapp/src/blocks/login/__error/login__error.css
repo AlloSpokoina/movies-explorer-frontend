@@ -1,6 +1,7 @@
 .login__error {
   display: block;
   min-height: 24px;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: normal;

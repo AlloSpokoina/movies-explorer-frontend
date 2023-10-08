@@ -3,3 +3,9 @@
   color: #4285F4;
   transition: opacity .3s linear;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .login__link:hover {
+    opacity: .7;
+  }
+}

@@ -14,8 +14,6 @@
 
 @media screen and (max-width:767px) {
   .search__container {
-    width: 300px;
-    height: 72px;
     flex-direction: column;
     margin: 80px auto;
     padding-bottom: 110px;

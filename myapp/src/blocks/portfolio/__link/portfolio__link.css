@@ -6,6 +6,10 @@
   font-weight: 400;
   line-height: 50px;
   letter-spacing: -1.2px;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity .3s linear;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,5 +23,12 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.72px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .portfolio__link:hover {
+    opacity: .7;
+    cursor: pointer;
   }
 }

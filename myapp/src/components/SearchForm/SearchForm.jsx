@@ -23,9 +23,9 @@ export default function SearchForm({ isCheck, changeShot }) {
           <button className='search__icon'></button>
           <input type="text" placeholder='Фильм' className='search__input' required />
           <button className='search__find'></button>
+          <FilterCheckbox isCheck={isCheck} changeShot={changeShot}/>
         </form>
         <span className={`search__error ${isError && 'search__error_active'}`}>{isError ? 'Введите ключевое слово' : ''}</span>
-        <FilterCheckbox isCheck={isCheck} changeShot={changeShot}/>
       </div>
     </section>
   )

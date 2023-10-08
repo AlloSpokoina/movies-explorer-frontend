@@ -12,7 +12,7 @@
   .login__text {
     display: flex;
     flex-direction: row;
-    font-size: 13px;
+    font-size: 12px;
     justify-content: center;
   }
 }

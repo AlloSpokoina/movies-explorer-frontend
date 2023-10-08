@@ -1,15 +1,28 @@
 .header__links-container {
   padding: 21px 0 0 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   align-items: center;
 }
 
+@media screen and (min-width:769px) and (max-width: 1023px) {
+  .header__links-container {
+    align-items: baseline;
+  }
+}
+
 .header__links-container_type_page {
   padding-top: 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width:769px) and (max-width: 1280px) {
+  .header__links-container_type_page {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 768px) {

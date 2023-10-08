@@ -1,11 +1,11 @@
 .portfolio__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
   padding-top: 50px;
+  row-gap: 20px;
 }
 
 @media screen and (max-width:767px) {

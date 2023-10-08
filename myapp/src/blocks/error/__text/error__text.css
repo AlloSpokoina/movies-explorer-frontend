@@ -5,6 +5,7 @@
   font-weight: 400;
   line-height: normal;
   color: #fff;
+  font-family: "Inter", "Arial", sans-serif;
 }
 
 @media screen and (max-width:767px) {

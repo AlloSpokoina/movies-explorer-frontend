@@ -11,13 +11,13 @@
   transition: opacity .3s linear;
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:769px) and (max-width:1023px) {
   .header__burger {
-    display: block;
+    display: none;
   }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (min-width:320px) and (max-width: 768px) {
   .header__burger {
     background-image: url('../../../images/burger.svg');
     display: block;
@@ -37,4 +37,10 @@
   top: 23px;
   right: 23px;
   transition: opacity .3s linear;
+}
+
+@media screen and (min-width:769px) {
+  .header__burger-close {
+    display: none;
+  }
 }

@@ -1,10 +1,11 @@
 .login__submit {
   padding: 0;
-  margin-top: 110px;
+  margin-top: 179px;
   border: none;
   border-radius: 3px;
   width: 100%;
   min-height: 45px;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
@@ -28,6 +29,13 @@
 
 @media screen and (max-width:767px) {
   .login__submit {
-    margin-top: 268px;
+    margin-top: 200px;
+    font-size: 12px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .login__submit:hover {
+    background-color: rgba(66, 133, 244, .8);
   }
 }

@@ -19,12 +19,12 @@ export default function MoviesCard({name, src, trailerLink }) {
           href={trailerLink}
           target="_blank"
           rel="noreferrer">
-          <img src={src} className="movie__image" alt="#" />
+          <img src={src} className="movie__image" alt={name} />
         </a>
         <div className="movie__card">
           <div className="movie__text">
             <div className="movie__title-container">
-              <p className="movie__title">{name}</p>
+              <h2 className="movie__title">{name}</h2>
               {pathname === '/movies' ?
                 <button type="button" className={`movie__save &{click ? 'movie__save_active' : ''}`} onClick={onClick}></button>
                 :

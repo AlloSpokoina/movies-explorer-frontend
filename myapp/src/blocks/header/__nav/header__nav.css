@@ -3,7 +3,7 @@
   transition: width .2s linear, visibility .2s linear;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width:768px) {
   .header__nav {
     visibility: hidden;
     position: fixed;
@@ -15,8 +15,7 @@
     z-index: 1;
   }
 }
-
 .header__nav_open {
-width: 100%;
-visibility: visible;
+  width: 100%;
+  visibility: visible;
 }

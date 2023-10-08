@@ -11,6 +11,10 @@
   transition: all .3s linear;
 }
 
+.search__check-svg-rect_active {
+  fill: #343434;
+}
+
 .search__check-svg-circle {
   transition: all .3s linear;
 }

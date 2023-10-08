@@ -6,6 +6,8 @@
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+  transition: opacity .3s linear;
+  cursor: pointer;
 }
 
 @media screen and (max-width:767px) {
@@ -15,5 +17,12 @@
     font-size: 12px;
     line-height: normal;
     margin-left: 0;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer__link:hover {
+    opacity: .7;
+    cursor: pointer;
   }
 }

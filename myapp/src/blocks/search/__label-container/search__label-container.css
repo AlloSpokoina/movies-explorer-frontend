@@ -21,3 +21,9 @@
     margin: 0 auto;
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .search__label-container:hover {
+    opacity: .7;
+  }
+}

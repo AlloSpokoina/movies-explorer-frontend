@@ -3,7 +3,7 @@
   text-align: center;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
-  margin: 0;
+  margin: 0 auto;
   padding: 26px 340px 100px;
   line-height: 20px;
   letter-spacing: -0.56px;
@@ -11,7 +11,11 @@
 
 @media screen and (min-width:768px) and (max-width:1023px) {
   .techs__text {
-    padding: 22px 70px 83px;
+    font-size: 12px;
+    padding: 22px 0px 83px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+    width: 460px;
   }
 }
 

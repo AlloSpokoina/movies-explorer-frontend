@@ -1,6 +1,6 @@
 export default function Techs() {
   return (
-    <section className='techs' id=''>
+    <section className='techs'>
       <h2 className='techs__title'>Технологии</h2>
       <div className='tech__info'>
         <h3 className='techs__subtitle'>7 технологий</h3>
