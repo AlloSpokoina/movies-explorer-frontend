@@ -16,7 +16,7 @@
 
 @media screen and (max-width:767px) {
   .promo__decorate {
-    margin: 60px 0 55px;
+    margin: 60px 0 42px;
     background-image: url(../../../images/spiral320.svg);
     background-size: cover;
     min-height: 230px;

@@ -1,6 +1,10 @@
+import { useLocation } from 'react-router-dom'
+
 export default function Header() {
+  const {pathname} = useLocation();
+
   return (
-    <footer className="footer">
+    <footer className={`footer  ${pathname === '/saved-movies' && 'page__footer_type_saved-movies'}`}>
       <h3 className="footer__title">
         Учебный проект Яндекс.Практикум х BeatFilm.
       </h3>
