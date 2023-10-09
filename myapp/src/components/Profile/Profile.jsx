@@ -19,6 +19,7 @@ export default function Profile({ name }) {
           type='text'
           title='Имя'
           minLength='3'
+          maxLength="30"
           value={values.username}
           isInputValid={isInputValid.username}
           error={errors.username}

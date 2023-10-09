@@ -1,4 +1,4 @@
-.about-project__step {
+.about__step {
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -8,17 +8,17 @@
   padding-bottom: 14px;
 }
 
-.about-project__step:last-of-type(2) {
+.about__step:last-of-type(2) {
   color: #fff
 }
 
 @media screen and (max-width:767px) {
-  .about-project__step {
+  .about__step {
     font-size: 11px;
     font-weight: 400;
   }
 }
 
-.about-project__step:nth-child(2) {
+.about__step:nth-child(2) {
   color: #fff
 }

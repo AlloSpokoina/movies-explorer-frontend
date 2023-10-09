@@ -1,17 +1,17 @@
-.about-project {
+.about {
 max-width: 1280px;
 background: #202020;
 padding: 110px 70px;
 }
 
 @media screen and (max-width: 768px) {
-  .about-project {
+  .about {
     padding: 90px 50px;
   }
 }
 
 @media screen and (max-width:767px) {
-  .about-project {
+  .about {
     padding: 70px 18px;
   }
 }

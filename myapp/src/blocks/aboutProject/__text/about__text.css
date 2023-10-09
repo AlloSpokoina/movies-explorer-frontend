@@ -1,4 +1,4 @@
-.about-project__text {
+.about__text {
   color: #FFF;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
@@ -9,14 +9,14 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-  .about-project__text{
+  .about__text{
     font-size: 12px;
     line-height: 18px;
   }
 }
 
 @media screen and (max-width:767px) {
-  .about-project__text{
+  .about__text{
     font-size: 11px;
     line-height: 16px;
     padding-top: 16px;

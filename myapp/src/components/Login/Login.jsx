@@ -30,6 +30,7 @@ export default function Login({ name, setLoggedIn }) {
         type='password'
         title='Пароль'
         minLength = '6'
+        maxLength="30"
         value={values.password}
         isInputValid={isInputValid.password}
         error={errors.password}

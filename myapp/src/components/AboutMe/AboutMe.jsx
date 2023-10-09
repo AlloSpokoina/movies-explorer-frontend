@@ -1,4 +1,4 @@
-import photo from '../../images/photo.jpg'
+import photo from '../../images/photo.png'
 
 export default function AboutMe() {
   return (

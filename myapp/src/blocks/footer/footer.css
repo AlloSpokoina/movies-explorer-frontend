@@ -5,12 +5,12 @@
   margin: 46 0 0;
 }
 
-.page__footer_type_saved-movies {
+.page__footer--type-saved-movies {
   padding-top: 52px;
 }
 
 @media screen and (min-width: 768px) {
-  .page__footer_type_saved-movies {
+  .page__footer--type-saved-movies {
     padding-top: 52px;
   }
 }

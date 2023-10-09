@@ -16,7 +16,7 @@ export default function Form({ name, children, isValid, onSubmit }) {
         name === 'signup' ?
           <>
             <span className='login__error-request login__error-request_type_reg'>{'При регистрации произошла ошибка.'}</span>
-            <button type="submit" className={`login__submit ${isValid ? '' : 'login__submit_disabled'}`}>{'Зарегистрироваться'}</button>
+            <button type="submit" className={`register__submit ${isValid ? '' : 'register__submit_disabled'} `}>{'Зарегистрироваться'}</button>
           </>
           :
           <>

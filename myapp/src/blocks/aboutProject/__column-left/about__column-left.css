@@ -1,4 +1,4 @@
-.about-project__column-left {
+.about__column-left {
   display: flex;
   height: 36px;
   min-width: 228px;
@@ -8,13 +8,13 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-  .about-project__column-left {
+  .about__column-left {
     min-width: 140px;
   }
 }
 
 @media screen and (max-width:767px) {
-  .about-project__column-left {
+  .about__column-left {
     min-width: 100px;
   }
 }

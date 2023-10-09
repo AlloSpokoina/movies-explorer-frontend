@@ -19,17 +19,17 @@
 @import url(./blocks/promo/__title/promo__title.css);
 @import url(./blocks/promo/__decorate/promo__decorate.css);
 
-@import url(./blocks/aboutProject/about-project.css);
-@import url(./blocks/aboutProject/__title/about-project__title.css);
-@import url(./blocks/aboutProject/__info/about-project__info.css);
-@import url(./blocks/aboutProject/__steps/about-project__steps.css);
-@import url(./blocks/aboutProject/__subtitle/about-project__subtitle.css);
-@import url(./blocks/aboutProject/__text/about-project__text.css);
-@import url(./blocks/aboutProject/__timeline/about-project__timeline.css);
-@import url(./blocks/aboutProject/__column-left/about-project__column-left.css);
-@import url(./blocks/aboutProject/__column-right/about-project__column-right.css);
-@import url(./blocks/aboutProject/__step/about-project__step.css);
-@import url(./blocks/aboutProject/__step-text/about-project__step-text.css);
+@import url(./blocks/aboutProject/about.css);
+@import url(./blocks/aboutProject/__title/about__title.css);
+@import url(./blocks/aboutProject/__info/about__info.css);
+@import url(./blocks/aboutProject/__steps/about__steps.css);
+@import url(./blocks/aboutProject/__subtitle/about__subtitle.css);
+@import url(./blocks/aboutProject/__text/about__text.css);
+@import url(./blocks/aboutProject/__timeline/about__timeline.css);
+@import url(./blocks/aboutProject/__column-left/about__column-left.css);
+@import url(./blocks/aboutProject/__column-right/about__column-right.css);
+@import url(./blocks/aboutProject/__step/about__step.css);
+@import url(./blocks/aboutProject/__step-text/about__step-text.css);
 
 @import url(./blocks/techs/techs.css);
 @import url(./blocks/techs/__title/techs__title.css);
@@ -53,6 +53,7 @@
 @import url(./blocks/portfolio/__subtitle//portfolio__subtitle.css);
 @import url(./blocks/portfolio/__list/portfolio__list.css);
 @import url(./blocks/portfolio/__links/portfolio__links.css);
+@import url(./blocks/footer/__list/footer__list.css);
 @import url(./blocks/portfolio/__link/portfolio__link.css);
 @import url(./blocks/portfolio/__button/portfolio__button.css);
 
@@ -96,6 +97,7 @@
 @import url(./blocks/login/__error/login__error.css);
 @import url(./blocks/login/__error/__error-request/login-error-request.css);
 @import url(./blocks/login/__submit/login__submit.css);
+@import url(./blocks/register/register__submit.css);
 
 @import url(./blocks/profile/profile.css);
 @import url(./blocks/profile/__title/profile__title.css);
