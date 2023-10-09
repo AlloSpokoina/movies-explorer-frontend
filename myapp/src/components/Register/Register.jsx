@@ -24,6 +24,7 @@ export default function Login({ name, setLoggedIn }) {
         isInputValid={isInputValid.username}
         error={errors.username}
         onChange={handleChange}
+        placeholder='Введите ваше имя'
       />
       <Input
         name='email'
@@ -33,6 +34,7 @@ export default function Login({ name, setLoggedIn }) {
         isInputValid={isInputValid.email}
         error={errors.email}
         onChange={handleChange}
+        placeholder='Введите ваш email'
       />
       <Input
         name='password'
@@ -43,6 +45,7 @@ export default function Login({ name, setLoggedIn }) {
         isInputValid={isInputValid.password}
         error={errors.password}
         onChange={handleChange}
+        placeholder='Введите ваш пароль'
       />
     </SectionLogin>
   )

@@ -8,6 +8,7 @@
   line-height: normal;
   text-decoration: none;
   padding-top: 26px;
+  transition: opacity .3s linear;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -19,5 +20,11 @@
 @media screen and (max-width:767px) {
   .profile__link{
     padding-top: 16px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profile__link:hover {
+    opacity: .7;
   }
 }

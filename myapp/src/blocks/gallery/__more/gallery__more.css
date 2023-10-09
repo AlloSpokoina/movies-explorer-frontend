@@ -12,6 +12,11 @@
   line-height: normal;
   color: #FFF;
   cursor: pointer;
+  transition: all .3s ease;
+}
+
+.gallery__more:hover {
+  opacity: .8;
 }
 
 .gallery__more_hidden {

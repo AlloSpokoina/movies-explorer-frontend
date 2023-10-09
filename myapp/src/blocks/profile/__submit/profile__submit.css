@@ -15,6 +15,10 @@
   transition: opacity .3s linear;
 }
 
+.profile__submit:hover {
+  opacity: .7;
+}
+
 @media screen and (max-width:767px) {
   .profile__submit {
     margin-top: 350px;

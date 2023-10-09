@@ -17,11 +17,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header__link_type_acc {
+  .header__link {
     font-size: 18px;
     font-weight: 500;
     line-height: 12px;
-    margin-left: 8px;
+    margin-left: 0px;
   }
 }
 
@@ -31,7 +31,8 @@
 
 @media screen and (max-width: 768px) {
   .header__link_active {
-    border-bottom: 1px solid var(--main-font-color);
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
   }
 }
 

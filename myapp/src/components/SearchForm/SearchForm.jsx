@@ -20,9 +20,9 @@ export default function SearchForm({ isCheck, changeShot }) {
     <section className='search'>
       <div className='search__container'>
         <form noValidate className='search__form' name={'SearchForm'}  >
-          <button className='search__icon'></button>
+          <button type='button' className='search__icon'></button>
           <input type="text" placeholder='Фильм' className='search__input' required />
-          <button className='search__find'></button>
+          <button type='button' className='search__find'></button>
         </form>
         <span className={`search__error ${isError && 'search__error_active'}`}>{isError ? 'Введите ключевое слово' : ''}</span>
         <FilterCheckbox isCheck={isCheck} changeShot={changeShot}/>

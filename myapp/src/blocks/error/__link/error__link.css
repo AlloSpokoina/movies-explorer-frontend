@@ -11,3 +11,10 @@
     font-size: 12px;
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .error__link:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}
