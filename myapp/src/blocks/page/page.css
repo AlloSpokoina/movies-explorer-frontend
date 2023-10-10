@@ -3,4 +3,7 @@
     height: 100vh;
     font-family: "Inter", "Arial", sans-serif;
     background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
