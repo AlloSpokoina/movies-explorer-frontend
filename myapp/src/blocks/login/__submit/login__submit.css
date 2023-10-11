@@ -39,3 +39,39 @@
     background-color: rgba(66, 133, 244, .8);
   }
 }
+
+.login__submit--register {
+  padding: 0;
+  margin-top: 108px;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  min-height: 45px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  background-color: #4285F4;
+  cursor: pointer;
+  transition: background-color .3s linear;
+}
+
+.login__submit--register_disabled{
+  background-color: #F8F8F8;
+  color: #C2C2C2;
+  pointer-events: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .login__submit--register{
+    margin-top: 106px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .login__submit--register {
+    margin-top: 200px;
+    font-size: 12px;
+  }
+}

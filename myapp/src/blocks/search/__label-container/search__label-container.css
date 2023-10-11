@@ -1,29 +1,28 @@
 .search__label-container {
-    display: flex;
-    cursor: pointer;
-    background-color: #2F2F2F;
-    transition: opacity .3s linear;
-    align-items: center;
-    padding-right: 30px;
-    border-radius: 0px 9px 9px 0px;
+  display: flex;
+  cursor: pointer;
+  background-color: #2F2F2F;
+  transition: opacity .3s linear;
+  align-items: center;
+  padding: 24px;
+  border-radius: 0px 9px 9px 0px;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-  .search__label-container {
-    padding-right: 20px;
-  }
+.search__label-container {
+  padding: 24px;
+}
 }
 
 @media screen and (max-width:767px) {
-  .search__label-container {
-    padding: 43px 0 0;
-    background: transparent;
-    margin: 0 auto;
-  }
+.search__label-container {
+  padding-top: 45px;
+  background: transparent;
+}
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .search__label-container:hover {
-    opacity: .7;
-  }
+.search__label-container:hover {
+  opacity: .7;
+}
 }

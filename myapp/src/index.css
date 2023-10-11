@@ -77,6 +77,7 @@
 @import url(./blocks/search/search.css);
 @import url(./blocks/search/__container/search__container.css);
 @import url(./blocks/search/__form/search__form.css);
+@import url(./blocks/search/__main/search__main.css);
 @import url(./blocks/search/__icon/search__icon.css);
 @import url(./blocks/search/__input/search__input.css);
 @import url(./blocks/search/__find/search__find.css);
@@ -97,7 +98,6 @@
 @import url(./blocks/login/__error/login__error.css);
 @import url(./blocks/login/__error/__error-request/login-error-request.css);
 @import url(./blocks/login/__submit/login__submit.css);
-@import url(./blocks/register/register__submit.css);
 
 @import url(./blocks/profile/profile.css);
 @import url(./blocks/profile/__title/profile__title.css);

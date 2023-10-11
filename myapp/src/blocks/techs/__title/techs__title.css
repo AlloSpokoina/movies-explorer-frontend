@@ -10,10 +10,12 @@
   letter-spacing: -0.88px;
 }
 
+
 @media screen and (max-width:767px) {
   .techs__title {
     font-size: 18px;
     letter-spacing: -0.72px;
     border-bottom: solid 1px #000;
+    padding-bottom: 28px;
   }
 }

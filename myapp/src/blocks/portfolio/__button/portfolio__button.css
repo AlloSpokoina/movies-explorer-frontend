@@ -1,22 +1,17 @@
 .portfolio__button {
-  width: 29px;
-  height: 60px;
-  padding: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;
-  background-image: url(../../../images/click.svg);
   background-repeat: no-repeat;
-  background-position: 4px 18px;
-  background-size: 20px 18px;
   transition: opacity .3s linear;
+  min-width: 12px;
+  padding-right: 3px;
+  height: 100%;
+  align-self: center;
 }
 
 @media screen and (max-width:767px) {
   .portfolio__button {
-    width: 15px;
-    height: 28px;
-    background-size: 10px 18px;
-    background-position: 0;
+    width: 12px;
   }
 }

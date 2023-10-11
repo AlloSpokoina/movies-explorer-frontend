@@ -6,3 +6,9 @@
   padding-top: 6px;
   border-top: solid 1px #424242;
 }
+
+@media screen and (max-width:767px) {
+  .movie__duration {
+    font-size: 10px;
+  }
+}

@@ -19,7 +19,7 @@ export default function Login({ name, setLoggedIn }) {
         name='username'
         type='text'
         title='Имя'
-        minLength = '2'
+        minLength ='2'
         maxLength="30"
         value={values.username}
         isInputValid={isInputValid.username}
@@ -41,7 +41,7 @@ export default function Login({ name, setLoggedIn }) {
         name='password'
         type='password'
         title='Пароль'
-        minLength = '6'
+        minLength ='6'
         maxLength="30"
         value={values.password}
         isInputValid={isInputValid.password}

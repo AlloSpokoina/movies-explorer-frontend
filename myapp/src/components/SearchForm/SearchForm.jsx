@@ -18,15 +18,15 @@ export default function SearchForm({ isCheck, changeShot }) {
 
   return (
     <section className='search'>
-      <div className='search__container'>
-        <form noValidate className='search__form' name={'SearchForm'}  >
+      <form noValidate className='search__form' name={'SearchForm'}>
+        <div className='search__main'>
           <button type='button' className='search__icon'></button>
           <input type="text" placeholder='Фильм' className='search__input' required />
           <button type='button' className='search__find'></button>
-        </form>
-        <span className={`search__error ${isError && 'search__error_active'}`}>{isError ? 'Введите ключевое слово' : ''}</span>
-        <FilterCheckbox isCheck={isCheck} changeShot={changeShot}/>
-      </div>
+        </div>
+        <FilterCheckbox isCheck={isCheck} changeShot={changeShot} />
+      </form>
+      <span className={`search__error ${isError && 'search__error_active'}`}>{isError ? 'Введите ключевое слово' : ''}</span>
     </section>
   )
 }

@@ -4,6 +4,9 @@
   text-decoration: none;
   color: #4285F4;
   transition: opacity .3s linear;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media screen and (max-width:767px) {

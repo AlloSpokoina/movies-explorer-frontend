@@ -8,13 +8,13 @@
   cursor: pointer;
   transition: opacity .3s linear;
   border-right: 1px solid #424242;
-  margin-right: 29px;
+  margin-right: 12px;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
   .search__find {
-    padding: 19px 50px;
-    margin-right: 19px;
+    padding: 19px 52px;
+    margin-right: 17px;
   }
 }
 
