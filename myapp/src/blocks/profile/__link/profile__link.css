@@ -1,0 +1,30 @@
+.profile__link {
+  display: block;
+  color: #EE3465;
+  text-align: center;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  padding-top: 26px;
+  transition: opacity .3s linear;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .profile__link {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .profile__link{
+    padding-top: 16px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profile__link:hover {
+    opacity: .7;
+  }
+}

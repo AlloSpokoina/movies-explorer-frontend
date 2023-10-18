@@ -1,0 +1,16 @@
+.movie__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 36px;
+  line-height: normal;
+}
+
+@media screen and (max-width:767px) {
+  .movie__title {
+    font-size: 12px;
+    padding-bottom: 29px;
+  }
+}

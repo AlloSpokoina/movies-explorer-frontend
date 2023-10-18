@@ -1,0 +1,15 @@
+.login__input {
+  background-color: transparent;
+  height: 30px;
+  border-style: none;
+  border-bottom: solid 1px #424242;
+  color: #fff;
+}
+
+.login__input_invaid {
+  color: #EE3465;
+}
+
+.login__input:focus {
+  outline: 0.2px solid #4285F4;
+}

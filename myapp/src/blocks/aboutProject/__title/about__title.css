@@ -1,0 +1,23 @@
+.about__title {
+  color: #fff;
+  font-size: 28px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: solid 1px #dadada;
+  letter-spacing: -0.88px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .about__title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .about__title {
+    font-size: 18px;
+    letter-spacing: -0,72px;
+  }
+}

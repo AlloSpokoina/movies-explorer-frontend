@@ -1,0 +1,56 @@
+.header__signin {
+  text-align: center;
+  padding-top: 8px;
+  background-color: #3DDC84;
+  display: block;
+  border-radius: 3px;
+  width: 76px;
+  min-height: 32px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  transition: opacity .3s linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header__signin:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__signup:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__link-home:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__link:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__burger-close:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__burger:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .header__signin {
+    width: 54px;
+    height: 26px;
+  }
+}

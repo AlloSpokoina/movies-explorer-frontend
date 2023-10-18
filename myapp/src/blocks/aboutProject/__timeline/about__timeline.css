@@ -1,0 +1,4 @@
+.about__timeline {
+  display: flex;
+  min-height: 67px;
+}

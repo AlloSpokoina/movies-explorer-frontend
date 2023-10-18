@@ -1,0 +1,14 @@
+.movie__duration {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 6px;
+  border-top: solid 1px #424242;
+}
+
+@media screen and (max-width:767px) {
+  .movie__duration {
+    font-size: 10px;
+  }
+}

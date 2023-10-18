@@ -1,0 +1,16 @@
+.error__text {
+  margin: 0 0 184px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+@media screen and (max-width:767px) {
+  .error__text {
+    margin: 0 0 284px 0;
+    font-size: 12px;
+  }
+}

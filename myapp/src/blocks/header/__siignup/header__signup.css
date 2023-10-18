@@ -1,0 +1,17 @@
+.header__signup {
+  margin-right: 30px;
+  text-decoration: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  transition: opacity .3s linear;
+}
+
+@media screen and (max-width:767px) {
+  .header__signup {
+    font-size: 10px;
+    margin: 14px;
+  }
+}

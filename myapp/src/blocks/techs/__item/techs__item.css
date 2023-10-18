@@ -1,0 +1,23 @@
+.techs__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #303030;
+  height: 60px;
+  min-width: 90px;
+  border-radius: 10px;
+  margin: 0;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .techs__item {
+    min-width: 84px;
+    height: 57px;
+    font-size: 12px;
+  }
+}

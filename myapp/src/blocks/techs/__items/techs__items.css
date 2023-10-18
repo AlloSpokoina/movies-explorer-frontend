@@ -1,0 +1,26 @@
+.techs__items {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  grid-template-columns: repeat(auto-fit, 90px);
+}
+
+@media screen and (max-width: 1023px) {
+  .techs__items {
+    max-width: 648px;
+    grid-template-columns: repeat(auto-fit, 84px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .techs__items {
+    max-width: calc(178/284*100%);
+    grid-template-columns: repeat(auto-fit, 84px);
+  }
+}

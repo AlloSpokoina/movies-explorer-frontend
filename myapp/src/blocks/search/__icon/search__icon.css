@@ -1,0 +1,24 @@
+.search__icon {
+  width: 34px;
+  height: 34px;
+  margin: 19px 10px 19px 19px;
+  background-color: #2F2F2F;
+  border: none;
+  background-image: url(../../../images/iconsearch.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .search__icon {
+    margin: 19px 17px 19px 19px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .search__icon {
+    visibility: hidden;
+    margin: 19px 0;
+  }
+}

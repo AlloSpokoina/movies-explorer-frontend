@@ -1,0 +1,24 @@
+.about__step {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding-top: 10px;
+  margin: 0;
+  padding-bottom: 14px;
+}
+
+.about__step:last-of-type(2) {
+  color: #fff
+}
+
+@media screen and (max-width:767px) {
+  .about__step {
+    font-size: 11px;
+    font-weight: 400;
+  }
+}
+
+.about__step:nth-child(2) {
+  color: #fff
+}

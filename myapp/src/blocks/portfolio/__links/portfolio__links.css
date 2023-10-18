@@ -1,0 +1,19 @@
+.portfolio__links {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  border-bottom: solid 1px #424242;
+  flex-direction: column;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .portfolio__links {
+    padding-bottom: 14px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .portfolio__links {
+    padding-bottom: 19px;
+  }
+}

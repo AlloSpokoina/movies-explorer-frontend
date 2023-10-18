@@ -1,0 +1,20 @@
+.login__home {
+  display: block;
+  background-image: url(../../../images/logo.svg);
+  width: 38px;
+  height: 38px;
+  transition: opacity .3s linear;
+}
+
+@media screen and (max-width:767px) {
+  .login__home{
+    margin: 0 auto;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .error__link:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}

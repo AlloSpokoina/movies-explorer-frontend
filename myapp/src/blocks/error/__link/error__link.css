@@ -1,0 +1,23 @@
+.error__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #4285F4;
+  transition: opacity .3s linear;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width:767px) {
+  .error__link {
+    font-size: 12px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .error__link:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}

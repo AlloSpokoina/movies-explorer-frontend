@@ -1,0 +1,17 @@
+.portfolio__button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  transition: opacity .3s linear;
+  min-width: 12px;
+  padding-right: 3px;
+  height: 100%;
+  align-self: center;
+}
+
+@media screen and (max-width:767px) {
+  .portfolio__button {
+    width: 12px;
+  }
+}

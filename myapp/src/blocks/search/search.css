@@ -1,0 +1,19 @@
+.search {
+  max-width: 1280px;
+  background-color: #202020;
+  padding: 70px 70px 80px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .search {
+    padding: 80px 30px 80px;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .search {
+    padding: 80px 10px 50px;
+    display: flex;
+  }
+}
