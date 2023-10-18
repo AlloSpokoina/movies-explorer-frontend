@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header({ name, loggedIn }) {
@@ -12,6 +12,24 @@ export default function Header({ name, loggedIn }) {
       setIsOpen(true)
     }
   }
+
+  function clickLink() {
+    setIsOpen(false)
+  }
+
+  useEffect(() => {
+    function closeBurgerForResize() {
+      if (document.documentElement.clientWidth > '767') {
+        setIsOpen(false)
+        window.removeEventListener('resize', closeBurgerForResize)
+      }
+    }
+    if (isOpen) {
+      window.addEventListener('resize', closeBurgerForResize)
+      return () => window.removeEventListener('resize', closeBurgerForResize)
+    }
+  }, [isOpen])
+
 
   return (
     <header className={`header page__header ${name !== 'home' ? 'page__header_type_page' : ''}`}>
@@ -37,24 +55,28 @@ export default function Header({ name, loggedIn }) {
                 <Link
                   to={'/'}
                   className={`header__link ${pathname === '/' ? 'header__link_active' : ''}`}
+                  onClick={clickLink}
                 >Главная</Link>
               </li>
               <li className='header__link-container'>
                 <Link
                   to={'/movies'}
                   className={`header__link ${pathname === '/movies' ? 'header__link_active' : ''}`}
+                  onClick={clickLink}
                 >Фильмы</Link>
               </li>
               <li className='header__link-container'>
                 <Link
                   to={'/saved-movies'}
                   className={`header__link ${pathname === '/saved-movies' ? 'header__link_active' : ''}`}
+                  onClick={clickLink}
                 >Сохранённые фильмы</Link>
               </li>
               <li className='header__link-container'>
                 <Link
                   to={'/profile'}
                   className={`header__link header__link_type_acc ${pathname === '/profile' ? 'header__link_active' : ''}`}
+                  onClick={clickLink}
                 >Аккаунт <div className='header__icon'></div></Link>
               </li>
             </ul>
