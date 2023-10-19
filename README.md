@@ -16,4 +16,4 @@ __________________________________________________________________________
 
 [Ссылка на пул реквест](https://github.com/AlloSpokoina/movies-explorer-frontend/pull/2)
 
-[Деплой](https://diplom66.nomoredomainsicu.ru)
+[Деплой](https://diplom66main.nomoredomainsicu.ru)
