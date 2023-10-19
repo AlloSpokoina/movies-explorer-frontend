@@ -13,7 +13,7 @@ import {
   StepMaxScreen,
   StepMediumScreen,
   StepSmallScreen
-} from "../../utils/constants";
+} from "../../utils/constants.jsx";
 
 export default function MoviesCardList({ movies, addMovie, isLoading, onDelete, serverError, savedMovies, firstEntrance }) {
   const [count, setCount] = useState('')
@@ -35,10 +35,6 @@ export default function MoviesCardList({ movies, addMovie, isLoading, onDelete, 
       counter.step = StepSmallScreen
     }
     return counter
-  }
-
-  function clickMore() {
-    setCount(count + printCards().step)
   }
 
   useEffect(() => {
@@ -63,6 +59,10 @@ export default function MoviesCardList({ movies, addMovie, isLoading, onDelete, 
     }
   }, [pathname, movies])
 
+  function clickMore() {
+    setCount(count + printCards().step)
+  }
+
   return (
     <section className='gallery'>
       <ul className='gallery__items'>
@@ -73,7 +73,7 @@ export default function MoviesCardList({ movies, addMovie, isLoading, onDelete, 
             <MoviesCard key={data.id} savedMovies={savedMovies}
             addMovie={addMovie} data={data}/>
           )
-        }):movies.length !== 0 ?
+        }): movies.length !== 0 ?
         movies.map(data => {
           return (
             <MoviesCard
@@ -92,10 +92,10 @@ export default function MoviesCardList({ movies, addMovie, isLoading, onDelete, 
           : pathname === '/movies' ?
           <span className='gallery__serch-error'>«Чтобы увидеть список фильмов выполните поиск»</span>
           :
-          <span className='gallery__serch-error'>«Нет сохранённых фильмов»</span>
+          <span className='gallery__serch-error'>«Вы ещё ничего не сохранили»</span>
       }
       </ul>
-      <button type='button' className={`gallery__more ${count >= movies.length && 'gallery__more_hidden'}`} onClick={clickMore}>Ёще</button>
+      {pathname === '/movies' && <button type='button' className={`gallery__more ${count >= movies.length && 'gallery__more_hidden'}`} onClick={clickMore}>Ёще</button>}
     </section>
   )
 }

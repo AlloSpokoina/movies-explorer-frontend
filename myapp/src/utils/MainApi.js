@@ -91,8 +91,8 @@ class ApiMain {
     })
   }
 
-  deleteMovie(cardId, token) {
-    return this._request(`/movies/${cardId}`, {
+  deleteMovie(movieId, token) {
+    return this._request(`/movies/${movieId}`, {
       method: 'DELETE',
       headers: {
         "Authorization" : `Bearer ${token}`

@@ -16,7 +16,7 @@ class ApiMovies {
 }
 
 const apiMovies = new ApiMovies({
-  baseUrl: 'https://api.nomoreparties.co/beatfilm-movies',
+  baseUrl: ' https://api.nomoreparties.co/beatfilm-movies',
 });
 
 export default apiMovies

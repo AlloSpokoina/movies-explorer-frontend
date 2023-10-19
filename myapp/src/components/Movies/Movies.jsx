@@ -1,6 +1,6 @@
 import SearchForm from "../SearchForm/SearchForm";
 import { useCallback, useState } from "react";
-import apiMovies from '../../utils/MainApi';
+import apiMovies from '../../utils/MoviesApi';
 import { useEffect } from "react";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
@@ -76,7 +76,7 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
       <SearchForm
         isCheck={isCheck}
         searchMovies={searchMovies}
-        searchedMovie={searchMouvie}
+        searchMovie={searchMouvie}
         changeShort={changeShort}
         setIsError={setIsError}
         firstEntrance={firstEntrance}

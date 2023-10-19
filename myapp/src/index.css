@@ -73,7 +73,9 @@
 @import url(./blocks/movie/__save/movie__save.css);
 @import url(./blocks/gallery/gallery.css);
 @import url(./blocks/gallery/__items/gallery__items.css);
+@import url(./blocks/movie/__image/movie__image.css);
 @import url(./blocks/gallery/__more/gallery__more.css);
+@import url(./blocks/gallery/__serch-error/gallery__serch-error.css);
 @import url(./blocks/search/search.css);
 @import url(./blocks/search/__container/search__container.css);
 @import url(./blocks/search/__form/search__form.css);

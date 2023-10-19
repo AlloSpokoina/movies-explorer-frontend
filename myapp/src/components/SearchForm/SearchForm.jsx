@@ -5,7 +5,7 @@ import FilterCheckbox from '../FilterCheckbox/FilterCheckbox'
 import ErrorContext from '../../contexts/ErrorContext'
 
 
-export default function SearchForm({ isCheck, changeShot, searchMovies, searchedMovie, setIsError, firstEntrance, savedMovies, }) {
+export default function SearchForm({ isCheck, changeShort, searchMovies, searchedMovie, setIsError, firstEntrance, savedMovies, }) {
   const isError = useContext(ErrorContext)
   const {values, handleChange, reset} = useFormValidation()
   const { pathname } = useLocation
@@ -42,7 +42,7 @@ export default function SearchForm({ isCheck, changeShot, searchMovies, searched
             disabled={savedMovies ? (savedMovies.length === 0 && true) : false} required />
           <button type='button' className={`search__find ${savedMovies ? (pathname === 'saved-movies' && savedMovies.length === 0) && 'search__submit_disabled' : ''}`}></button>
         </div>
-        <FilterCheckbox isCheck={isCheck} changeShot={changeShot} firstEntrance={firstEntrance} />
+        <FilterCheckbox isCheck={isCheck} changeShort={changeShort} firstEntrance={firstEntrance} />
       </form>
       <span className={`search__error ${isError && 'search__error_active'}`}>{isError ? 'Введите ключевое слово' : ''}</span>
     </section>
