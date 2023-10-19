@@ -16,7 +16,7 @@ import {
 } from "../../utils/constants.jsx";
 
 export default function MoviesCardList({ movies, addMovie, isLoading, onDelete, serverError, savedMovies, firstEntrance }) {
-  const [count, setCount] = useState('')
+  const [count, setCount] = useState(InitMoreMaxScreen)
   const fact = movies.slice(0, count)
   const { pathname } = useLocation()
 

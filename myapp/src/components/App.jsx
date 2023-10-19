@@ -58,11 +58,11 @@ function App() {
 
   function handleToggelMovie(data) {
     const isAdd = savedMovies.some(element => data.id === element.movieId)
-    const seachClickMovie = savedMovies.filter((movie) => {
+    const searchClickMovie = savedMovies.filter((movie) => {
       return movie.movieId === data.id
     })
     if (isAdd) {
-      handleDeleteMovie(seachClickMovie[0]._id)
+      handleDeleteMovie(searchClickMovie[0]._id)
     } else {
       apiMain.addMovie(data, localStorage.jwt)
         .then(res => {
