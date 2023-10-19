@@ -13,7 +13,7 @@ export default function Header({ name, loggedIn }) {
     }
   }
 
-  function clickLink() {
+  function clickLinkOpen() {
     setIsOpen(false)
   }
 
@@ -55,28 +55,28 @@ export default function Header({ name, loggedIn }) {
                 <Link
                   to={'/'}
                   className={`header__link ${pathname === '/' ? 'header__link_active' : ''}`}
-                  onClick={clickLink}
+                  onClick={clickLinkOpen}
                 >Главная</Link>
               </li>
               <li className='header__link-container'>
                 <Link
                   to={'/movies'}
                   className={`header__link ${pathname === '/movies' ? 'header__link_active' : ''}`}
-                  onClick={clickLink}
+                  onClick={clickLinkOpen}
                 >Фильмы</Link>
               </li>
               <li className='header__link-container'>
                 <Link
                   to={'/saved-movies'}
                   className={`header__link ${pathname === '/saved-movies' ? 'header__link_active' : ''}`}
-                  onClick={clickLink}
+                  onClick={clickLinkOpen}
                 >Сохранённые фильмы</Link>
               </li>
               <li className='header__link-container'>
                 <Link
                   to={'/profile'}
                   className={`header__link header__link_type_acc ${pathname === '/profile' ? 'header__link_active' : ''}`}
-                  onClick={clickLink}
+                  onClick={clickLinkOpen}
                 >Аккаунт <div className='header__icon'></div></Link>
               </li>
             </ul>

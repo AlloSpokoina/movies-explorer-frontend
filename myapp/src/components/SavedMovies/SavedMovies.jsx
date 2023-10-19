@@ -4,14 +4,14 @@ import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 export default function SavedMovies({ savedMovies, onDelete, setIsError }) {
 
-  const [filteredMovies, setFilteredMovies] = useState(savedMovies)
-  const [searchedMouvie, setSearchedMovie] = useState('')
+  const [filterMovies, setFilterMovies] = useState(savedMovies)
+  const [searchMouvie, setSearchMovie] = useState('')
   const [isCheck, setIsCheck] = useState(false)
   const [firstEntrance, setFirstEntrance] = useState(true)
 
   const filter = useCallback((search, isCheck, movies) => {
-    setSearchedMovie(search)
-    setFilteredMovies(movies.filter((movie) => {
+    setSearchMovie(search)
+    setFilterMovies(movies.filter((movie) => {
       const searchName = movie.nameRU.toLowerCase().includes(search.toLowerCase())
       return isCheck ? (searchName && movie.duration <= 40) : searchName
     }))
@@ -28,18 +28,18 @@ export default function SavedMovies({ savedMovies, onDelete, setIsError }) {
     } else {
       setFirstEntrance(false)
     }
-    filter(searchedMouvie, isCheck, savedMovies)
-  }, [filter, savedMovies, isCheck, searchedMouvie])
+    filter(searchMouvie, isCheck, savedMovies)
+  }, [filter, savedMovies, isCheck, searchMouvie])
 
   function changeShort() {
     if (isCheck) {
       setIsCheck(false)
       setFirstEntrance(false)
-      filter(searchedMouvie, false, savedMovies)
+      filter(searchMouvie, false, savedMovies)
     } else {
       setIsCheck(true)
       setFirstEntrance(false)
-      filter(searchedMouvie, true, savedMovies)
+      filter(searchMouvie, true, savedMovies)
     }
   }
 
@@ -48,14 +48,14 @@ export default function SavedMovies({ savedMovies, onDelete, setIsError }) {
       <SearchForm
         isCheck={isCheck}
         searchMovies={searchMovies}
-        searchedMovie={searchedMouvie}
+        searchedMovie={searchMouvie}
         changeShort={changeShort}
         setIsError={setIsError}
         firstEntrance={firstEntrance}
         savedMovies={SavedMovies}
       />
       <MoviesCardList
-        movies={filteredMovies}
+        movies={filterMovies}
         onDelete={onDelete}
         firstEntrance={firstEntrance}
       />

@@ -6,19 +6,19 @@ import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 export default function Movies({ setIsError, addMovie, savedMovies }) {
   const [allMovies, setAllMovies] = useState([])
-  const [filteredMovies, setFilteredMovies] = useState([])
-  const [searchedMouvie, setSearchedMovie] = useState('')
+  const [filterMovies, setFilterMovies] = useState([])
+  const [searchMouvie, setSearchMovie] = useState('')
   const [isCheck, setIsCheck] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [serverError, setServerError] = useState(false)
   const [firstEntrance, setFirstEntrance] = useState(true)
 
   const filter = useCallback((search, isCheck, movies) => {
-    setSearchedMovie(search)
+    setSearchMovie(search)
     localStorage.setItem('movie', JSON.stringify(search))
     localStorage.setItem('shorts', JSON.stringify(isCheck))
     localStorage.setItem('allmovies', JSON.stringify(movies))
-    setFilteredMovies(movies.filter((movie) => {
+    setFilterMovies(movies.filter((movie) => {
       const searchName = movie.nameRU.toLowerCase().includes(search.toLowerCase())
       return isCheck ? (searchName && movie.duration <= 40) : searchName
     }))
@@ -52,7 +52,7 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
       const isCheck = JSON.parse(localStorage.shorts)
       setServerError(false)
       setFirstEntrance(false)
-      setSearchedMovie(search)
+      setSearchMovie(search)
       setIsCheck(isCheck)
       setAllMovies(movies)
       filter(search, isCheck, movies)
@@ -62,11 +62,11 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
   function changeShort() {
     if (isCheck) {
       setIsCheck(false)
-      filter(searchedMouvie, false, allMovies)
+      filter(searchMouvie, false, allMovies)
       localStorage.setItem('shorts', JSON.stringify(false))
     } else {
       setIsCheck(true)
-      filter(searchedMouvie, true, allMovies)
+      filter(searchMouvie, true, allMovies)
       localStorage.setItem('shorts', JSON.stringify(true))
     }
   }
@@ -76,13 +76,13 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
       <SearchForm
         isCheck={isCheck}
         searchMovies={searchMovies}
-        searchedMovie={searchedMouvie}
+        searchedMovie={searchMouvie}
         changeShort={changeShort}
         setIsError={setIsError}
         firstEntrance={firstEntrance}
       />
       <MoviesCardList
-        movies={filteredMovies}
+        movies={filterMovies}
         addMovie={addMovie}
         savedMovies={savedMovies}
         isLoading={isLoading}

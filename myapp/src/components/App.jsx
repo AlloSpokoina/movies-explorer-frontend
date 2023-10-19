@@ -82,7 +82,7 @@ function App() {
       })
       .catch((err) => {
         setIsError(true)
-        console.error(`Ошибкак при авторизации ${err}`)
+        console.error(`Ошибка при авторизации ${err}`)
       })
       .finally(() => setIsSend(false))
   }
@@ -101,14 +101,14 @@ function App() {
             })
             .catch((err) => {
               setIsError(true)
-              console.error(`Ошибкак при авторизации после регистрации ${err}`)
+              console.error(`Ошибка при авторизации ${err}`)
             })
             .finally(() => setIsSend(false))
         }
       })
       .catch((err) => {
         setIsError(true)
-        console.error(`Ошибкак при регистрации ${err}`)
+        console.error(`Ошибка при регистрации ${err}`)
       })
       .finally(() => setIsSend(false))
   }
@@ -129,7 +129,7 @@ function App() {
       })
       .catch((err) => {
         setIsError(true)
-        console.error(`Ошибкак при редактировании данных пользователя ${err}`)
+        console.error(`Ошибка при редактировании данных пользователя ${err}`)
       })
       .finally(() => setIsSend(false))
   }
