@@ -3,11 +3,12 @@ import { useCallback, useState } from "react";
 import apiMovies from '../../utils/MoviesApi';
 import { useEffect } from "react";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
+import { ShortDuration } from "../../utils/constants";
 
 export default function Movies({ setIsError, addMovie, savedMovies }) {
   const [allMovies, setAllMovies] = useState([])
   const [filterMovies, setFilterMovies] = useState([])
-  const [searchMouvie, setSearchMovie] = useState('')
+  const [searchMovie, setSearchMovie] = useState('')
   const [isCheck, setIsCheck] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [serverError, setServerError] = useState(false)
@@ -20,7 +21,7 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
     localStorage.setItem('allmovies', JSON.stringify(movies))
     setFilterMovies(movies.filter((movie) => {
       const searchName = movie.nameRU.toLowerCase().includes(search.toLowerCase())
-      return isCheck ? (searchName && movie.duration <= 40) : searchName
+      return isCheck ? (searchName && movie.duration <= ShortDuration) : searchName
     }))
   }, [])
 
@@ -62,11 +63,11 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
   function changeShort() {
     if (isCheck) {
       setIsCheck(false)
-      filter(searchMouvie, false, allMovies)
+      filter(searchMovie, false, allMovies)
       localStorage.setItem('shorts', JSON.stringify(false))
     } else {
       setIsCheck(true)
-      filter(searchMouvie, true, allMovies)
+      filter(searchMovie, true, allMovies)
       localStorage.setItem('shorts', JSON.stringify(true))
     }
   }
@@ -76,7 +77,7 @@ export default function Movies({ setIsError, addMovie, savedMovies }) {
       <SearchForm
         isCheck={isCheck}
         searchMovies={searchMovies}
-        searchMovie={searchMouvie}
+        searchMovie={searchMovie}
         changeShort={changeShort}
         setIsError={setIsError}
         firstEntrance={firstEntrance}

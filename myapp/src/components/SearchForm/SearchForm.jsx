@@ -5,7 +5,7 @@ import FilterCheckbox from '../FilterCheckbox/FilterCheckbox'
 import ErrorContext from '../../contexts/ErrorContext'
 
 
-export default function SearchForm({ isCheck, changeShort, searchMovies, searchedMovie, setIsError, firstEntrance, savedMovies, }) {
+export default function SearchForm({ isCheck, changeShort, searchMovies, searchMovie, setIsError, firstEntrance, savedMovies, }) {
   const isError = useContext(ErrorContext)
   const {values, handleChange, reset} = useFormValidation()
   const { pathname } = useLocation
@@ -14,10 +14,16 @@ export default function SearchForm({ isCheck, changeShort, searchMovies, searche
     if ((pathname === '/saved-movies' && savedMovies.length === 0)) {
       reset({ search: '' })
     } else {
-      reset({ search: searchedMovie })
+      reset({ search: searchMovie })
     }
     setIsError(false)
-  }, [searchedMovie, reset, setIsError, pathname, savedMovies])
+  }, [searchMovie, reset, setIsError, pathname, savedMovies])
+
+  useEffect(() => {
+    if (!firstEntrance) {
+      reset({ search: searchMovie })
+    }
+  }, [searchMovie, reset, firstEntrance])
 
   function onSubmit(evt) {
     evt.preventDefault()
@@ -40,7 +46,7 @@ export default function SearchForm({ isCheck, changeShort, searchMovies, searche
               setIsError(false)
             }}
             disabled={savedMovies ? (savedMovies.length === 0 && true) : false} required />
-          <button type='button' className={`search__find ${savedMovies ? (pathname === 'saved-movies' && savedMovies.length === 0) && 'search__submit_disabled' : ''}`}></button>
+          <button type='submit' className={`search__find ${savedMovies ? (pathname === 'saved-movies' && savedMovies.length === 0) && 'search__submit_disabled' : ''}`}></button>
         </div>
         <FilterCheckbox isCheck={isCheck} changeShort={changeShort} firstEntrance={firstEntrance} />
       </form>

@@ -3,7 +3,7 @@ import SectionLogin from "../SectionLogin/SectionLogin"
 import useFormValidation from "../../hooks/useFormValidation"
 import { EmailRegex } from "../../utils/constants"
 
-export default function Login({ name,  onRegister, setIsError }) {
+export default function Login({ name,  onRegister, setIsError, }) {
   const { values, errors, isInputValid, isValid, handleChange, } = useFormValidation()
 
 
@@ -40,7 +40,7 @@ export default function Login({ name,  onRegister, setIsError }) {
           handleChange(evt)
           setIsError(false)
         }}
-        pattern={EmailRegex}
+        pattern= {EmailRegex}
         placeholder='Введите вашу электронную почту'
       />
       <Input

@@ -4,12 +4,13 @@ import { useEffect } from "react"
 import ErrorContext from "../../contexts/ErrorContext"
 import SendContext from "../../contexts/SendContext"
 import { useLocation } from "react-router-dom"
+import CurrentUserContext from "../../contexts/CurrentContext"
 
-export default function Form({ name, children, isValid, onSubmit, setIsError, values, isSuccess, setSuccess, setIsEdit }) {
+export default function Form({ name, children, isValid, onSubmit, isEdit, setIsError, values, isSuccess, setSuccess, setIsEdit }) {
   const { pathname } = useLocation()
   const isError = useContext(ErrorContext)
   const isSend = useContext(SendContext)
-
+  const currentUser = useContext(CurrentUserContext)
 
   useEffect(() => {
     setIsError(false)
@@ -42,15 +43,34 @@ export default function Form({ name, children, isValid, onSubmit, setIsError, va
             disabled={!isValid || isSend || isError}
             >{isSend ? <Preloader name='button' /> : 'Зарегистрироваться'}</button>
           </>
-       :
+       : !isEdit ?
           <>
-            <span className={`profile__error-request ${isError ? 'profile__error-request_type_error' : isSuccess && 'profile__error-request_type_success'}`}> {isError ? 'При обновлении профиля произошла ошибка.' : 'Успешно'}</span>
+            <span className={`profile__error-request ${isError ? 'profile__error-request_type_error' : isSuccess && 'profile__error-request_type_success'}`}> {isError ? 'При обновлении профиля произошла ошибка.' : 'Изменения сохранены'}</span>
             <button type="submit" className={`profile__submit `}
             onClick={() => {
                   setIsEdit(true)
                   setSuccess(false)
                 }}
               >{'Редактировать'}</button>
-          </>}
+          </>
+          :
+            <>
+              <span className={`profile__error-request ${isError ? 'profile__error-request_type_error' : isSuccess && 'profile__error-request_type_success'}`}>{isError ? 'При обновлении профиля произошла ошибка.' : 'Изменения сохранены'}</span>
+              <button
+                type="submit"
+                className={`login__submit ${(values.username === currentUser.name && values.email === currentUser.email) || !isValid || isError ? 'login__submit_disabled' : ''}`}
+                disabled={!isValid || isSend || isError}
+              >{isSend ? <Preloader name='button' /> : 'Сохранить'}</button>
+              <button
+                type="button"
+                className={`profile__submit `}
+                onClick={() => {
+                  setIsEdit(false)
+                  setSuccess(false)
+                  setIsError(false)
+                }}
+              >{'Отменить редактирование'}</button>
+            </>
+      }
     </form>
      )}
