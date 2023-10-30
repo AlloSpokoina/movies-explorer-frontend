@@ -1,4 +1,4 @@
-export default function Input({ selectname, name, type, title, minLength, value, isInputValid, error, onChange, placeholder}) {
+export default function Input({ selectname, name, type, title, minLength, pattern, value, isInputValid, error, onChange, placeholder}) {
 
   return (
     <>
@@ -15,6 +15,7 @@ export default function Input({ selectname, name, type, title, minLength, value,
             onChange={onChange}
             autoComplete='on'
             placeholder={placeholder}
+            pattern={pattern}
           />
           <span className='login__error'>{error}</span>
         </label>
@@ -31,6 +32,7 @@ export default function Input({ selectname, name, type, title, minLength, value,
             value={value || ''}
             onChange={onChange}
             placeholder={placeholder}
+            pattern={pattern}
           />
         </label>
         <span className={`profile__error ${name === 'username' ? 'profile__error_type_name' : ''}`}>{error}</span>

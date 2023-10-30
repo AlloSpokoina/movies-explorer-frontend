@@ -1,20 +1,19 @@
-import { useNavigate } from "react-router-dom"
 import Input from "../Input/Input"
 import SectionLogin from "../SectionLogin/SectionLogin"
 import useFormValidation from "../../hooks/useFormValidation"
+import { EmailRegex } from "../../utils/constants"
 
-export default function Login({ name, setLoggedIn }) {
-  const navigate = useNavigate()
+export default function Login({ name,  onRegister, setIsError, }) {
   const { values, errors, isInputValid, isValid, handleChange, } = useFormValidation()
 
-  function onLogin(evt) {
+
+  function onSubmit(evt) {
     evt.preventDefault()
-    navigate('/signin')
-    setLoggedIn(true)
+    onRegister(values.username, values.email, values.password)
   }
 
   return (
-    <SectionLogin name={name} isValid={isValid} onSubmit={onLogin}>
+    <SectionLogin name={name} isValid={isValid} onSubmit={onSubmit} setIsError={setIsError}>
       <Input
         name='username'
         type='text'
@@ -24,7 +23,10 @@ export default function Login({ name, setLoggedIn }) {
         value={values.username}
         isInputValid={isInputValid.username}
         error={errors.username}
-        onChange={handleChange}
+        onChange={(evt) => {
+          handleChange(evt)
+          setIsError(false)
+        }}
         placeholder='Введите ваше имя'
       />
       <Input
@@ -34,8 +36,12 @@ export default function Login({ name, setLoggedIn }) {
         value={values.email}
         isInputValid={isInputValid.email}
         error={errors.email}
-        onChange={handleChange}
-        placeholder='Введите ваш email'
+        onChange={(evt) => {
+          handleChange(evt)
+          setIsError(false)
+        }}
+        pattern= {EmailRegex}
+        placeholder='Введите вашу электронную почту'
       />
       <Input
         name='password'
@@ -46,7 +52,10 @@ export default function Login({ name, setLoggedIn }) {
         value={values.password}
         isInputValid={isInputValid.password}
         error={errors.password}
-        onChange={handleChange}
+        onChange={(evt) => {
+          handleChange(evt)
+          setIsError(false)
+        }}
         placeholder='Введите ваш пароль'
       />
     </SectionLogin>

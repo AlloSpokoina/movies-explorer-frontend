@@ -16,3 +16,12 @@
     margin: 0;
   }
 }
+
+.profile__error-request_type_error {
+  visibility: visible;
+}
+
+.profile__error-request_type_success {
+  visibility: visible;
+  color: #fff;
+}
