@@ -13,5 +13,3 @@ Movies-сервис поиска фильмов по ключевым слова
 __________________________________________________________________________
 
 [Макет](https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/light-1?type=design&node-id=1-6199&mode=design&t=TkbnOIKvThmuMnVu-0)
-
-[Деплой](https://diplom66main.nomoredomainsrocks.ru/)
